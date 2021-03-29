@@ -1,0 +1,12 @@
+.text_face {
+    font-size: 10vh;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    -webkit-transform: translateX(-25%);
+    transform: translateX(-25%);
+}

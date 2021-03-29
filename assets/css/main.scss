@@ -1,0 +1,28 @@
+    body {
+        background-color: rgb(31, 31, 31) !important;
+        color: blanchedalmond !important;
+        margin: 0;
+        width: 80vw;
+        height: 80vh;
+    }
+    
+    canvas {
+        position: absolute;
+    }
+    
+    img {
+        position: absolute;
+    }
+    
+    .rightAbsol {
+        position: fixed !important;
+        right: 0;
+    }
+    
+    .dropdown-menu {
+        background-color: transparent !important;
+    }
+    
+    label {
+        color: white;
+    }

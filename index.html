@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!--canvas_empiles-->
+    <!--Et non, il n'a pas besoin de CSS-->
+
+    <!--png_empiles-->
+    <link rel="stylesheet" href="assets/maniere/png_empiles/png_empiles.css">
+
+    <!--multipng-->
+    <link rel="stylesheet" href="assets/maniere/multi_png/multi_png.css">
+
+    <!--css-->
+    <link rel="stylesheet" href="assets/maniere/css/css.css">
+
+    <!--texte-->
+    <link rel="stylesheet" href="assets/maniere/texte/texte.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Parlote 6</title>
+</head>
+
+<body onload="setcanvas()">
+
+    <main>
+        <section id="main">
+            <div class="row">
+                <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2">
+                    <div class="cadre" id="ca_canvas_empiles"></div>
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2">
+                    <div class="cadre" id="ca_png_empiles"></div>
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2">
+                    <div class="cadre" id="ca_multipng"></div>
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2">
+                    <div class="cadre" id="ca_css"></div>
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2">
+                    <div class="cadre" id="ca_texte"></div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom  ">
+            <ul class="navbar-nav ">
+
+
+            </ul>
+            <ul class="navbar-nav ">
+                <li class="nav-item ">
+                    <button type="button" class="btn btn-outline-secondary"><a class="nav-link" href=" https://github.com/DzenetanMassart/Parlote6 ">Vers le répertoire Github</a> </button>
+                </li>
+
+                <li class="nav-item dropdown dropup">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbardrop" data-toggle="dropdown">
+                      Gérer la sensibilité
+                    </a>
+                    <div class="dropdown-menu ">
+                        <form name="sensibilite_zone"></form>
+                        <input type="range" min="0" max="20" value="0" step="1" class="bg-light dropdown-item form-control-range nav-link" name="sensibilite" id="sensibilite" list="tickmarks" oninput="sensibilite_view.value = sensibilite.value">
+                        <label for="sensibilite">Sensibilité ajoutée = <output name="sensibilite_view" id="sensibilite_view">0</output></label>
+                        <datalist id="tickmarks">
+                            <option value="0" label="0%">
+                            <option value="2">
+                            <option value="4">
+                            <option value="6">
+                            <option value="8">
+                            <option value="10" label="50%">
+                            <option value="12">
+                            <option value="14">
+                            <option value="16">
+                            <option value="18">
+                            <option value="20" label="100%">
+                          </datalist>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <a class="navbar-brand"><span id="intensite_sonore"> 0 </span> décibels</a>
+                </li>
+            </ul>
+
+        </nav>
+    </footer>
+
+
+    <!--canvas_empiles-->
+    <script src="assets/maniere/canvas_empiles/canvas_empiles_entities.js"></script>
+    <!--png_empiles-->
+    <script src="assets/maniere/png_empiles/png_empiles_entite_frames.js"></script>
+
+    <script src="assets/maniere/png_empiles/png_empiles_entite.js"></script>
+    <!--multipng-->
+    <script src="assets/maniere/multi_png/js/multi_png_frames.js"></script>
+
+    <script src="assets/maniere/multi_png/js/multi_png_entities.js"></script>
+    <!--css-->
+    <script src="assets/maniere/css/css.js"></script>
+    <!--texte-->
+    <script src="assets/maniere/texte/texte.js"></script>
+    <!--Activation-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
