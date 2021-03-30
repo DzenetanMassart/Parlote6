@@ -26,3 +26,19 @@
     label {
         color: white;
     }
+    
+    @media screen and (orientation: portrait) {
+        body {
+            background-color: rgb(31, 31, 31) !important;
+            color: blanchedalmond !important;
+            margin: 0;
+            width: 100vw;
+            height: 90vh;
+        }
+        #is {
+            display: none;
+        }
+        .cadre {
+            padding: 10vw;
+        }
+    }

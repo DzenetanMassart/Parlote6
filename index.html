@@ -30,26 +30,23 @@
 
 <body onload="setcanvas()">
 
-    <main>
-        <section id="main">
-            <div class="row">
-                <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2">
-                    <div class="cadre" id="ca_canvas_empiles"></div>
-                </div>
-                <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2">
-                    <div class="cadre" id="ca_png_empiles"></div>
-                </div>
-                <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2">
-                    <div class="cadre" id="ca_multipng"></div>
-                </div>
-                <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2">
-                    <div class="cadre" id="ca_css"></div>
-                </div>
-                <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2">
-                    <div class="cadre" id="ca_texte"></div>
-                </div>
+    <main class="container">
+        <section id="main" class="row">
+            <div class="col-sm-2 col-lg-3">
+                <div class="cadre" id="ca_canvas_empiles"></div>
             </div>
-
+            <div class="col-sm-2 col-lg-3">
+                <div class="cadre" id="ca_png_empiles"></div>
+            </div>
+            <div class="col-sm-2 col-lg-3">
+                <div class="cadre" id="ca_multipng"></div>
+            </div>
+            <div class="col-sm-2 col-lg-3">
+                <div class="cadre" id="ca_css"></div>
+            </div>
+            <div class="col-sm-2 col-lg-3">
+                <div class="cadre" id="ca_texte"></div>
+            </div>
         </section>
     </main>
 
@@ -73,45 +70,47 @@
                         <input type="range" min="0" max="20" value="0" step="1" class="bg-light dropdown-item form-control-range nav-link" name="sensibilite" id="sensibilite" list="tickmarks" oninput="sensibilite_view.value = sensibilite.value">
                         <label for="sensibilite">Sensibilité ajoutée = <output name="sensibilite_view" id="sensibilite_view">0</output></label>
                         <datalist id="tickmarks">
-                            <option value="0" label="0%">
-                            <option value="2">
-                            <option value="4">
-                            <option value="6">
-                            <option value="8">
-                            <option value="10" label="50%">
-                            <option value="12">
-                            <option value="14">
-                            <option value="16">
-                            <option value="18">
-                            <option value="20" label="100%">
+                            <option value="0" label="0"></option>
+                            <option value="2"></option>
+                            <option value="4"></option>
+                            <option value="6"></option>
+                            <option value="8"></option>
+                            <option value="10" label="10"></option>
+                            <option value="12"></option>
+                            <option value="14"></option>
+                            <option value="16"></option>
+                            <option value="18"></option>
+                            <option value="20"label="20"></option>
                           </datalist>
                     </div>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item" id="is">
                     <a class="navbar-brand"><span id="intensite_sonore"> 0 </span> décibels</a>
                 </li>
             </ul>
 
         </nav>
     </footer>
-
+    <!--Creation-->
+    <script src="assets/js/creation.js"></script>
 
     <!--canvas_empiles-->
     <script src="assets/maniere/canvas_empiles/canvas_empiles_entities.js"></script>
+
     <!--png_empiles-->
-    <script src="assets/maniere/png_empiles/png_empiles_entite_frames.js"></script>
-
     <script src="assets/maniere/png_empiles/png_empiles_entite.js"></script>
-    <!--multipng-->
-    <script src="assets/maniere/multi_png/js/multi_png_frames.js"></script>
 
+    <!--multipng-->
     <script src="assets/maniere/multi_png/js/multi_png_entities.js"></script>
+
     <!--css-->
     <script src="assets/maniere/css/css.js"></script>
+
     <!--texte-->
     <script src="assets/maniere/texte/texte.js"></script>
+
     <!--Activation-->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/activation.js"></script>
 </body>
 
 </html>

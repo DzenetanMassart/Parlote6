@@ -3,7 +3,6 @@ let array;
 let values;
 let length;
 let average;
-const taille = 'style="width:200px"';
 
 /* La sensibilité ajoutée */
 let sensi = 0;

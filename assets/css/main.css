@@ -26,4 +26,20 @@ img {
 label {
   color: white;
 }
+
+@media screen and (orientation: portrait) {
+  body {
+    background-color: #1f1f1f !important;
+    color: blanchedalmond !important;
+    margin: 0;
+    width: 100vw;
+    height: 90vh;
+  }
+  #is {
+    display: none;
+  }
+  .cadre {
+    padding: 10vw;
+  }
+}
 /*# sourceMappingURL=main.css.map */

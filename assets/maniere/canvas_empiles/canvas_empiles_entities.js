@@ -1,6 +1,7 @@
 document.getElementById("ca_canvas_empiles").innerHTML = '<canvas id="tete" width="200" height="200"></canvas><canvas id="bouche_zéro" width="200" height="200"></canvas><canvas id="bouche" width="200" height="200"></canvas>';
 
 
+
 //On déssine la tête et la bouche
 function setcanvas() {
     let tete = document.getElementById("tete");
@@ -86,7 +87,7 @@ function canvas_empiles() {
         bouche.style.transform = "translateY(" + Math.round(average) / 2 + "px)";
         tete.style.transform = "scale(" + (Math.round(average) / 100 + 1) + "," + (Math.round(average) / 500 + 1) + ")"
     } else {
-        bouche.style.transform = "translateY(" + 30 + "px)";
+        bouche.style.transform = "translateY(" + max + "px)";
         tete.style.transform = "scale(" + (Math.round(average) / 100 + 1) + "," + (Math.round(average) / 500 + 1) + ")"
     }
 }
